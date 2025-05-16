@@ -12,11 +12,13 @@ AWS S3 support has been integrated into CTFd as of version 2.0.
   * SECRET_ACCESS_KEY
   * BUCKET 
 
-`ACCESS_KEY_ID` is your AWS Access Key. If you do not provide this, the plugin will try to use an IAM role or credentials file.
+`S3_ACCESS_KEY_ID` is your AWS Access Key. If you do not provide this, the plugin will try to use an IAM role or credentials file.
 
-`SECRET_ACCESS_KEY` is your AWS Secret Key. If you do not provide this, the plugin will try to use an IAM role or credentials file.
+`S3_SECRET_ACCESS_KEY` is your AWS Secret Key. If you do not provide this, the plugin will try to use an IAM role or credentials file.
 
-`BUCKET` is the name of your Amazon S3 bucket. 
+`S3_BUCKET` is the name of your Amazon S3 bucket. 
+
+`S3_ENDPOINT_URL` is the endpoint url of your Amazon S3 bucket. 
 
 ## Note
 
