@@ -8,9 +8,10 @@ AWS S3 support has been integrated into CTFd as of version 2.0.
 1. To install clone this repository to the [CTFd/plugins](https://github.com/isislab/CTFd/tree/master/CTFd/plugins) folder.
 2. Install the requirements specified in the [requirements.txt](https://github.com/CTFd/CTFd-S3-plugin/blob/master/requirements.txt) file. 
 3. Edit [CTFd/config.py](https://github.com/isislab/CTFd/blob/master/CTFd/config.py) and add the following entries:
-  * ACCESS_KEY_ID
-  * SECRET_ACCESS_KEY
-  * BUCKET 
+  * S3_ACCESS_KEY_ID
+  * S3_SECRET_ACCESS_KEY
+  * S3_BUCKET
+  * S3_ENDPOINT_URL (optional)
 
 `S3_ACCESS_KEY_ID` is your AWS Access Key. If you do not provide this, the plugin will try to use an IAM role or credentials file.
 
