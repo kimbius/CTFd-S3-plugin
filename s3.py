@@ -88,6 +88,9 @@ def load(app):
         else:
             return redirect(url_for('auth.login'))
 
-    utils.upload_file = upload_file
-    utils.delete_file = delete_file
-    app.view_functions['views.file_handler'] = file_handler
+    access_key_id = utils.get_app_config('S3_ACCESS_KEY_ID')
+    secret_access_key = utils.get_app_config('S3_SECRET_ACCESS_KEY')
+    if access_key_id and secret_access_key:
+        utils.upload_file = upload_file
+        utils.delete_file = delete_file
+        app.view_functions['views.file_handler'] = file_handler
